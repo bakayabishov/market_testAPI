@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Buisness</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="11.0.1" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+        <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+        <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.26.0" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.26.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Services\IServices" />
+      <Folder Include="Validators" />
+    </ItemGroup>
+
+</Project>
